@@ -33,10 +33,10 @@
 - (void)mapViewWillStartLoadingMap:(MKMapView *)mapView
 {
     CLLocationCoordinate2D thailandCoordinates;
-    thailandCoordinates.latitude = 15.8700;
+    thailandCoordinates.latitude = 13.8700;
     thailandCoordinates.longitude = 100.9925;
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance( CLLocationCoordinate2DMake(thailandCoordinates.latitude, thailandCoordinates.longitude), 1, 1);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance( CLLocationCoordinate2DMake(thailandCoordinates.latitude, thailandCoordinates.longitude), 1000000, 1000000);
     
     region.center = thailandCoordinates;
     
