@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QdM-nG-QA9">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MapViewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MapViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hdG-yF-0cB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cel-4D-6kQ">
+                                <rect key="frame" x="0.0" y="568" width="320" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="5aw-4T-Jx1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hdG-yF-0cB" secondAttribute="bottom" id="1iv-bQ-e39"/>
+                            <constraint firstItem="cel-4D-6kQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2gy-5X-Uce"/>
+                            <constraint firstItem="hdG-yF-0cB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="4wG-5n-sAG"/>
+                            <constraint firstAttribute="trailing" secondItem="cel-4D-6kQ" secondAttribute="trailing" id="AXA-g7-kPr"/>
+                            <constraint firstItem="hdG-yF-0cB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fj9-xa-wIv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="cel-4D-6kQ" secondAttribute="bottom" constant="-125" id="JAI-Ht-yQD"/>
+                            <constraint firstAttribute="trailing" secondItem="hdG-yF-0cB" secondAttribute="trailing" id="nia-jp-UBe"/>
+                            <constraint firstItem="hdG-yF-0cB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rLr-q0-lms"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XLV-j0-0s7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849.375" y="138.38028169014083"/>
+        </scene>
+        <!--Transport Details-->
+        <scene sceneID="Pme-Bh-tun">
+            <objects>
+                <viewController id="W0e-Gy-nwP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sih-YF-sax"/>
+                        <viewControllerLayoutGuide type="bottom" id="nLJ-Dn-VvV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q6S-gz-9hK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transport Details" id="eyH-cu-E5i">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="backButton.png" id="XTz-Xh-fBR">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcs-hs-0Wp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kzi-NJ-Ygm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="QdM-nG-QA9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tAr-St-hZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yOI-YO-8PJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrY-gf-fkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Oe-I1-iPx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tyN-v9-XRs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TWf-oe-xar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W0e-Gy-nwP" kind="relationship" relationship="rootViewController" id="hNe-uh-njJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Bp-xd-ifX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664.8" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton.png" width="32" height="32"/>
+    </resources>
+</document>

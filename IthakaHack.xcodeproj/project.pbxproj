@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		298A12BA1E6957AE005CA8CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12B91E6957AE005CA8CA /* main.m */; };
+		298A12BD1E6957AE005CA8CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12BC1E6957AE005CA8CA /* AppDelegate.m */; };
+		298A12C31E6957AE005CA8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298A12C11E6957AE005CA8CA /* Main.storyboard */; };
+		298A12C51E6957AE005CA8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298A12C41E6957AE005CA8CA /* Assets.xcassets */; };
+		298A12C81E6957AE005CA8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298A12C61E6957AE005CA8CA /* LaunchScreen.storyboard */; };
+		298A12D31E6957AE005CA8CA /* IthakaHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12D21E6957AE005CA8CA /* IthakaHackTests.m */; };
+		298A12DE1E6957AE005CA8CA /* IthakaHackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12DD1E6957AE005CA8CA /* IthakaHackUITests.m */; };
+		298A12ED1E696382005CA8CA /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12EC1E696382005CA8CA /* backButton.png */; };
+		298A12F21E696422005CA8CA /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12F11E696422005CA8CA /* MapViewViewController.m */; };
+		298A12F61E69646A005CA8CA /* MapViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12F51E69646A005CA8CA /* MapViewDataController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		298A12CF1E6957AE005CA8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 298A12AD1E6957AD005CA8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 298A12B41E6957AD005CA8CA;
+			remoteInfo = IthakaHack;
+		};
+		298A12DA1E6957AE005CA8CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 298A12AD1E6957AD005CA8CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 298A12B41E6957AD005CA8CA;
+			remoteInfo = IthakaHack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		298A12B51E6957AE005CA8CA /* IthakaHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IthakaHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		298A12B91E6957AE005CA8CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		298A12BB1E6957AE005CA8CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		298A12BC1E6957AE005CA8CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		298A12C21E6957AE005CA8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		298A12C41E6957AE005CA8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		298A12C71E6957AE005CA8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		298A12C91E6957AE005CA8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298A12CE1E6957AE005CA8CA /* IthakaHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IthakaHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		298A12D21E6957AE005CA8CA /* IthakaHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IthakaHackTests.m; sourceTree = "<group>"; };
+		298A12D41E6957AE005CA8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298A12D91E6957AE005CA8CA /* IthakaHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IthakaHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		298A12DD1E6957AE005CA8CA /* IthakaHackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IthakaHackUITests.m; sourceTree = "<group>"; };
+		298A12DF1E6957AE005CA8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298A12EC1E696382005CA8CA /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		298A12F01E696422005CA8CA /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
+		298A12F11E696422005CA8CA /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
+		298A12F41E69646A005CA8CA /* MapViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewDataController.h; sourceTree = "<group>"; };
+		298A12F51E69646A005CA8CA /* MapViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewDataController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		298A12B21E6957AD005CA8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		298A12CB1E6957AE005CA8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		298A12D61E6957AE005CA8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		298A12AC1E6957AD005CA8CA = {
+			isa = PBXGroup;
+			children = (
+				298A12B71E6957AE005CA8CA /* IthakaHack */,
+				298A12D11E6957AE005CA8CA /* IthakaHackTests */,
+				298A12DC1E6957AE005CA8CA /* IthakaHackUITests */,
+				298A12B61E6957AE005CA8CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		298A12B61E6957AE005CA8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				298A12B51E6957AE005CA8CA /* IthakaHack.app */,
+				298A12CE1E6957AE005CA8CA /* IthakaHackTests.xctest */,
+				298A12D91E6957AE005CA8CA /* IthakaHackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		298A12B71E6957AE005CA8CA /* IthakaHack */ = {
+			isa = PBXGroup;
+			children = (
+				298A12BB1E6957AE005CA8CA /* AppDelegate.h */,
+				298A12BC1E6957AE005CA8CA /* AppDelegate.m */,
+				298A12EE1E6963D2005CA8CA /* Map Display View */,
+				298A12EB1E696373005CA8CA /* Images */,
+				298A12C11E6957AE005CA8CA /* Main.storyboard */,
+				298A12C41E6957AE005CA8CA /* Assets.xcassets */,
+				298A12C61E6957AE005CA8CA /* LaunchScreen.storyboard */,
+				298A12C91E6957AE005CA8CA /* Info.plist */,
+				298A12B81E6957AE005CA8CA /* Supporting Files */,
+			);
+			path = IthakaHack;
+			sourceTree = "<group>";
+		};
+		298A12B81E6957AE005CA8CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				298A12B91E6957AE005CA8CA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		298A12D11E6957AE005CA8CA /* IthakaHackTests */ = {
+			isa = PBXGroup;
+			children = (
+				298A12D21E6957AE005CA8CA /* IthakaHackTests.m */,
+				298A12D41E6957AE005CA8CA /* Info.plist */,
+			);
+			path = IthakaHackTests;
+			sourceTree = "<group>";
+		};
+		298A12DC1E6957AE005CA8CA /* IthakaHackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				298A12DD1E6957AE005CA8CA /* IthakaHackUITests.m */,
+				298A12DF1E6957AE005CA8CA /* Info.plist */,
+			);
+			path = IthakaHackUITests;
+			sourceTree = "<group>";
+		};
+		298A12EB1E696373005CA8CA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				298A12EC1E696382005CA8CA /* backButton.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		298A12EE1E6963D2005CA8CA /* Map Display View */ = {
+			isa = PBXGroup;
+			children = (
+				298A12EF1E696404005CA8CA /* View Controller */,
+				298A12F31E696434005CA8CA /* DataController */,
+			);
+			name = "Map Display View";
+			sourceTree = "<group>";
+		};
+		298A12EF1E696404005CA8CA /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				298A12F01E696422005CA8CA /* MapViewViewController.h */,
+				298A12F11E696422005CA8CA /* MapViewViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		298A12F31E696434005CA8CA /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				298A12F41E69646A005CA8CA /* MapViewDataController.h */,
+				298A12F51E69646A005CA8CA /* MapViewDataController.m */,
+			);
+			name = DataController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		298A12B41E6957AD005CA8CA /* IthakaHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 298A12E21E6957AE005CA8CA /* Build configuration list for PBXNativeTarget "IthakaHack" */;
+			buildPhases = (
+				298A12B11E6957AD005CA8CA /* Sources */,
+				298A12B21E6957AD005CA8CA /* Frameworks */,
+				298A12B31E6957AD005CA8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IthakaHack;
+			productName = IthakaHack;
+			productReference = 298A12B51E6957AE005CA8CA /* IthakaHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		298A12CD1E6957AE005CA8CA /* IthakaHackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 298A12E51E6957AE005CA8CA /* Build configuration list for PBXNativeTarget "IthakaHackTests" */;
+			buildPhases = (
+				298A12CA1E6957AE005CA8CA /* Sources */,
+				298A12CB1E6957AE005CA8CA /* Frameworks */,
+				298A12CC1E6957AE005CA8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				298A12D01E6957AE005CA8CA /* PBXTargetDependency */,
+			);
+			name = IthakaHackTests;
+			productName = IthakaHackTests;
+			productReference = 298A12CE1E6957AE005CA8CA /* IthakaHackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		298A12D81E6957AE005CA8CA /* IthakaHackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 298A12E81E6957AE005CA8CA /* Build configuration list for PBXNativeTarget "IthakaHackUITests" */;
+			buildPhases = (
+				298A12D51E6957AE005CA8CA /* Sources */,
+				298A12D61E6957AE005CA8CA /* Frameworks */,
+				298A12D71E6957AE005CA8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				298A12DB1E6957AE005CA8CA /* PBXTargetDependency */,
+			);
+			name = IthakaHackUITests;
+			productName = IthakaHackUITests;
+			productReference = 298A12D91E6957AE005CA8CA /* IthakaHackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		298A12AD1E6957AD005CA8CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = PalviRane;
+				TargetAttributes = {
+					298A12B41E6957AD005CA8CA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					298A12CD1E6957AE005CA8CA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 298A12B41E6957AD005CA8CA;
+					};
+					298A12D81E6957AE005CA8CA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 298A12B41E6957AD005CA8CA;
+					};
+				};
+			};
+			buildConfigurationList = 298A12B01E6957AD005CA8CA /* Build configuration list for PBXProject "IthakaHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 298A12AC1E6957AD005CA8CA;
+			productRefGroup = 298A12B61E6957AE005CA8CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				298A12B41E6957AD005CA8CA /* IthakaHack */,
+				298A12CD1E6957AE005CA8CA /* IthakaHackTests */,
+				298A12D81E6957AE005CA8CA /* IthakaHackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		298A12B31E6957AD005CA8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298A12C81E6957AE005CA8CA /* LaunchScreen.storyboard in Resources */,
+				298A12C51E6957AE005CA8CA /* Assets.xcassets in Resources */,
+				298A12ED1E696382005CA8CA /* backButton.png in Resources */,
+				298A12C31E6957AE005CA8CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		298A12CC1E6957AE005CA8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		298A12D71E6957AE005CA8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		298A12B11E6957AD005CA8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298A12F21E696422005CA8CA /* MapViewViewController.m in Sources */,
+				298A12F61E69646A005CA8CA /* MapViewDataController.m in Sources */,
+				298A12BD1E6957AE005CA8CA /* AppDelegate.m in Sources */,
+				298A12BA1E6957AE005CA8CA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		298A12CA1E6957AE005CA8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298A12D31E6957AE005CA8CA /* IthakaHackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		298A12D51E6957AE005CA8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298A12DE1E6957AE005CA8CA /* IthakaHackUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		298A12D01E6957AE005CA8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 298A12B41E6957AD005CA8CA /* IthakaHack */;
+			targetProxy = 298A12CF1E6957AE005CA8CA /* PBXContainerItemProxy */;
+		};
+		298A12DB1E6957AE005CA8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 298A12B41E6957AD005CA8CA /* IthakaHack */;
+			targetProxy = 298A12DA1E6957AE005CA8CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		298A12C11E6957AE005CA8CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				298A12C21E6957AE005CA8CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		298A12C61E6957AE005CA8CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				298A12C71E6957AE005CA8CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		298A12E01E6957AE005CA8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		298A12E11E6957AE005CA8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		298A12E31E6957AE005CA8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IthakaHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalviRane.IthakaHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		298A12E41E6957AE005CA8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IthakaHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalviRane.IthakaHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		298A12E61E6957AE005CA8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IthakaHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalviRane.IthakaHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IthakaHack.app/IthakaHack";
+			};
+			name = Debug;
+		};
+		298A12E71E6957AE005CA8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IthakaHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalviRane.IthakaHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IthakaHack.app/IthakaHack";
+			};
+			name = Release;
+		};
+		298A12E91E6957AE005CA8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IthakaHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalviRane.IthakaHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IthakaHack;
+			};
+			name = Debug;
+		};
+		298A12EA1E6957AE005CA8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IthakaHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalviRane.IthakaHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IthakaHack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		298A12B01E6957AD005CA8CA /* Build configuration list for PBXProject "IthakaHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298A12E01E6957AE005CA8CA /* Debug */,
+				298A12E11E6957AE005CA8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		298A12E21E6957AE005CA8CA /* Build configuration list for PBXNativeTarget "IthakaHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298A12E31E6957AE005CA8CA /* Debug */,
+				298A12E41E6957AE005CA8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		298A12E51E6957AE005CA8CA /* Build configuration list for PBXNativeTarget "IthakaHackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298A12E61E6957AE005CA8CA /* Debug */,
+				298A12E71E6957AE005CA8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		298A12E81E6957AE005CA8CA /* Build configuration list for PBXNativeTarget "IthakaHackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298A12E91E6957AE005CA8CA /* Debug */,
+				298A12EA1E6957AE005CA8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 298A12AD1E6957AD005CA8CA /* Project object */;
+}
