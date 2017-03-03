@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "TransportRoutesViewController.h"
 
-@interface MapViewViewController : UIViewController <MKMapViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
+@interface MapViewViewController : UIViewController <MKMapViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, ResetTransportDelegate>
 
 @end
