@@ -17,6 +17,7 @@
 		298A12ED1E696382005CA8CA /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12EC1E696382005CA8CA /* backButton.png */; };
 		298A12F21E696422005CA8CA /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12F11E696422005CA8CA /* MapViewViewController.m */; };
 		298A12F61E69646A005CA8CA /* MapViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12F51E69646A005CA8CA /* MapViewDataController.m */; };
+		298A12F91E696BF9005CA8CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298A12F81E696BF9005CA8CA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		298A12F11E696422005CA8CA /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
 		298A12F41E69646A005CA8CA /* MapViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewDataController.h; sourceTree = "<group>"; };
 		298A12F51E69646A005CA8CA /* MapViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewDataController.m; sourceTree = "<group>"; };
+		298A12F81E696BF9005CA8CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298A12F91E696BF9005CA8CA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,7 @@
 				298A12D11E6957AE005CA8CA /* IthakaHackTests */,
 				298A12DC1E6957AE005CA8CA /* IthakaHackUITests */,
 				298A12B61E6957AE005CA8CA /* Products */,
+				298A12F71E696BF9005CA8CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,6 +182,14 @@
 				298A12F51E69646A005CA8CA /* MapViewDataController.m */,
 			);
 			name = DataController;
+			sourceTree = "<group>";
+		};
+		298A12F71E696BF9005CA8CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				298A12F81E696BF9005CA8CA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
