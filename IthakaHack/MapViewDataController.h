@@ -10,4 +10,9 @@
 
 @interface MapViewDataController : NSObject
 
+@property (strong,nonatomic) NSString *fromCity;
+@property (strong,nonatomic) NSString *toCity;
+
+
+
 @end

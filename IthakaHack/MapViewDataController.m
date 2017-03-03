@@ -10,4 +10,14 @@
 
 @implementation MapViewDataController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+         _fromCity = @"";
+        _toCity = @"";
+    }
+    return self;
+}
+
 @end

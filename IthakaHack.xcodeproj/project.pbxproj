@@ -14,10 +14,11 @@
 		298A12C81E6957AE005CA8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298A12C61E6957AE005CA8CA /* LaunchScreen.storyboard */; };
 		298A12D31E6957AE005CA8CA /* IthakaHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12D21E6957AE005CA8CA /* IthakaHackTests.m */; };
 		298A12DE1E6957AE005CA8CA /* IthakaHackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12DD1E6957AE005CA8CA /* IthakaHackUITests.m */; };
-		298A12ED1E696382005CA8CA /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12EC1E696382005CA8CA /* backButton.png */; };
 		298A12F21E696422005CA8CA /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12F11E696422005CA8CA /* MapViewViewController.m */; };
 		298A12F61E69646A005CA8CA /* MapViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A12F51E69646A005CA8CA /* MapViewDataController.m */; };
 		298A12F91E696BF9005CA8CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298A12F81E696BF9005CA8CA /* MapKit.framework */; };
+		298A12FB1E698465005CA8CA /* Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12FA1E698465005CA8CA /* Pin.png */; };
+		298A12FD1E69847C005CA8CA /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12FC1E69847C005CA8CA /* backButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +53,13 @@
 		298A12D91E6957AE005CA8CA /* IthakaHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IthakaHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		298A12DD1E6957AE005CA8CA /* IthakaHackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IthakaHackUITests.m; sourceTree = "<group>"; };
 		298A12DF1E6957AE005CA8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		298A12EC1E696382005CA8CA /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
 		298A12F01E696422005CA8CA /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
 		298A12F11E696422005CA8CA /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
 		298A12F41E69646A005CA8CA /* MapViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewDataController.h; sourceTree = "<group>"; };
 		298A12F51E69646A005CA8CA /* MapViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewDataController.m; sourceTree = "<group>"; };
 		298A12F81E696BF9005CA8CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		298A12FA1E698465005CA8CA /* Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin.png; sourceTree = "<group>"; };
+		298A12FC1E69847C005CA8CA /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +154,8 @@
 		298A12EB1E696373005CA8CA /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				298A12EC1E696382005CA8CA /* backButton.png */,
+				298A12FA1E698465005CA8CA /* Pin.png */,
+				298A12FC1E69847C005CA8CA /* backButton.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -299,8 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				298A12C81E6957AE005CA8CA /* LaunchScreen.storyboard in Resources */,
+				298A12FB1E698465005CA8CA /* Pin.png in Resources */,
+				298A12FD1E69847C005CA8CA /* backButton.png in Resources */,
 				298A12C51E6957AE005CA8CA /* Assets.xcassets in Resources */,
-				298A12ED1E696382005CA8CA /* backButton.png in Resources */,
 				298A12C31E6957AE005CA8CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
