@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface MapViewViewController : UIViewController <MKMapViewDelegate>
+@interface MapViewViewController : UIViewController <MKMapViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end

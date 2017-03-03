@@ -8,6 +8,8 @@
 
 #import "MapViewViewController.h"
 #import "MapViewDataController.h"
+#import "OfferCollectionViewCell.h"
+#import "AddButtonCollectionViewCell.h"
 
 #define RedColor [UIColor colorWithRed:223/255.0 green:123/255.0 blue:119/255.0 alpha:1.0]
 
@@ -16,13 +18,16 @@
 
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
+//Pop - up View
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *searchViewBottomConstraint;
-
-//Pop - up View Label
-
 @property (weak, nonatomic) IBOutlet UILabel *fromCityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *toCityLabel;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
+
+//collection View
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewBottonConstraint;
+@property (weak, nonatomic) IBOutlet UICollectionView *offersCollectionView;
 
 
 @property (nonatomic, retain) MapViewDataController *dataCtrl;
@@ -150,6 +155,7 @@
     else if(tapCount == 2)
     {
         _toCityLabel.text = @"Koh Samui";
+        _toCityLabel.textColor = [UIColor blackColor];
         
         //enable SearchButton
         [_searchButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
@@ -161,10 +167,47 @@
     
 }
 
+#pragma mark -  CollectionView
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 2;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0)
+    {
+        OfferCollectionViewCell *offerCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"offersCellIdentifier" forIndexPath:indexPath];
+        
+        return offerCell;
+    }
+    else
+    {
+        AddButtonCollectionViewCell *addCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"addCellIdentifier" forIndexPath:indexPath];
+        
+        return addCell;
+
+    }
+}
+
+
 #pragma mark - Button Actions
 
 - (IBAction)searchButtonAction:(id)sender
 {
+    _searchViewBottomConstraint.constant = -150;
+    [self.view layoutIfNeeded];
+    
+    _collectionViewBottonConstraint.constant = 0;
+    [UIView animateWithDuration:0.4 animations:^{
+        [self.view layoutIfNeeded];
+    }];
     
 }
 

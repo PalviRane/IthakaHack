@@ -16,6 +16,7 @@
     if (self) {
          _fromCity = @"";
         _toCity = @"";
+        _transportArray = [[NSMutableArray alloc] init];
     }
     return self;
 }

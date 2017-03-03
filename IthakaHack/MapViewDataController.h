@@ -13,6 +13,6 @@
 @property (strong,nonatomic) NSString *fromCity;
 @property (strong,nonatomic) NSString *toCity;
 
-
+@property (strong, nonatomic) NSMutableArray *transportArray;
 
 @end

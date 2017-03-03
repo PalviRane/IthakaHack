@@ -19,6 +19,9 @@
 		298A12F91E696BF9005CA8CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298A12F81E696BF9005CA8CA /* MapKit.framework */; };
 		298A12FB1E698465005CA8CA /* Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12FA1E698465005CA8CA /* Pin.png */; };
 		298A12FD1E69847C005CA8CA /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12FC1E69847C005CA8CA /* backButton.png */; };
+		298A12FF1E699E24005CA8CA /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12FE1E699E24005CA8CA /* plus.png */; };
+		298A13031E699FF4005CA8CA /* OfferCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A13021E699FF4005CA8CA /* OfferCollectionViewCell.m */; };
+		298A13091E69A2C6005CA8CA /* AddButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A13081E69A2C6005CA8CA /* AddButtonCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,11 @@
 		298A12F81E696BF9005CA8CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		298A12FA1E698465005CA8CA /* Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin.png; sourceTree = "<group>"; };
 		298A12FC1E69847C005CA8CA /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		298A12FE1E699E24005CA8CA /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		298A13011E699FF4005CA8CA /* OfferCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferCollectionViewCell.h; sourceTree = "<group>"; };
+		298A13021E699FF4005CA8CA /* OfferCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferCollectionViewCell.m; sourceTree = "<group>"; };
+		298A13071E69A2C6005CA8CA /* AddButtonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddButtonCollectionViewCell.h; sourceTree = "<group>"; };
+		298A13081E69A2C6005CA8CA /* AddButtonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddButtonCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,7 @@
 			children = (
 				298A12FA1E698465005CA8CA /* Pin.png */,
 				298A12FC1E69847C005CA8CA /* backButton.png */,
+				298A12FE1E699E24005CA8CA /* plus.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 		298A12EE1E6963D2005CA8CA /* Map Display View */ = {
 			isa = PBXGroup;
 			children = (
+				298A13001E699FC5005CA8CA /* View */,
 				298A12EF1E696404005CA8CA /* View Controller */,
 				298A12F31E696434005CA8CA /* DataController */,
 			);
@@ -193,6 +203,17 @@
 				298A12F81E696BF9005CA8CA /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		298A13001E699FC5005CA8CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				298A13011E699FF4005CA8CA /* OfferCollectionViewCell.h */,
+				298A13021E699FF4005CA8CA /* OfferCollectionViewCell.m */,
+				298A13071E69A2C6005CA8CA /* AddButtonCollectionViewCell.h */,
+				298A13081E69A2C6005CA8CA /* AddButtonCollectionViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +327,7 @@
 				298A12FD1E69847C005CA8CA /* backButton.png in Resources */,
 				298A12C51E6957AE005CA8CA /* Assets.xcassets in Resources */,
 				298A12C31E6957AE005CA8CA /* Main.storyboard in Resources */,
+				298A12FF1E699E24005CA8CA /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +356,8 @@
 				298A12F61E69646A005CA8CA /* MapViewDataController.m in Sources */,
 				298A12BD1E6957AE005CA8CA /* AppDelegate.m in Sources */,
 				298A12BA1E6957AE005CA8CA /* main.m in Sources */,
+				298A13091E69A2C6005CA8CA /* AddButtonCollectionViewCell.m in Sources */,
+				298A13031E699FF4005CA8CA /* OfferCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
