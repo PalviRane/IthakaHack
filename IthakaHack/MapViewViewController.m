@@ -182,12 +182,19 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 2;
+    if (_dataCtrl.transportArray.count == 1 )
+    {
+        return 2;
+    }
+    else
+    {
+        return 3;
+    }
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0)
+    if (indexPath.row == 0 || _dataCtrl.transportArray.count > 1 )
     {
         OfferCollectionViewCell *offerCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"offersCellIdentifier" forIndexPath:indexPath];
         
