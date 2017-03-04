@@ -119,7 +119,7 @@
             }
             
             //Adding routes array to transport option object
-            transportOption.routesArray = routeArray;
+            transportOption.routes = routeArray;
         }
     
         [transportOptionsArray addObject: transportOption];

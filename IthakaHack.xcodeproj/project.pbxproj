@@ -131,9 +131,8 @@
 		292C25B51E69AD610005E9D3 /* Table Display */ = {
 			isa = PBXGroup;
 			children = (
+				2991B8351E6AD13000CB2A7B /* View Controller */,
 				292C25B91E69AD970005E9D3 /* View */,
-				292C25B61E69AD800005E9D3 /* TransportRoutesViewController.h */,
-				292C25B71E69AD800005E9D3 /* TransportRoutesViewController.m */,
 			);
 			name = "Table Display";
 			sourceTree = "<group>";
@@ -292,6 +291,15 @@
 				2991B8331E6AC35200CB2A7B /* Route.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		2991B8351E6AD13000CB2A7B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				292C25B61E69AD800005E9D3 /* TransportRoutesViewController.h */,
+				292C25B71E69AD800005E9D3 /* TransportRoutesViewController.m */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

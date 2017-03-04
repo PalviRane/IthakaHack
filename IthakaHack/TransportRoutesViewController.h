@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapViewDataController.h"
 
 @protocol ResetTransportDelegate <NSObject>
 @optional
@@ -17,5 +18,6 @@
 @interface TransportRoutesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) id<ResetTransportDelegate> delegate;
+@property (nonatomic, retain) MapViewDataController *dataCtrl;
 
 @end

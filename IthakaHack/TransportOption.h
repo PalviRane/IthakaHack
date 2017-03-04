@@ -13,6 +13,6 @@
 @property(nonatomic,retain) NSNumber *totalCost;
 @property(nonatomic,retain) NSNumber *totalDuration;
 @property(nonatomic,retain) NSString *type;
-@property(nonatomic,retain) NSArray *routesArray;
+@property(nonatomic,retain) NSArray *routes;
 
 @end

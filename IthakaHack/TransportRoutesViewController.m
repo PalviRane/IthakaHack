@@ -8,6 +8,7 @@
 
 #import "TransportRoutesViewController.h"
 #import "OfferTableViewCell.h"
+#import "TransportOption.h"
 
 @interface TransportRoutesViewController ()
 
@@ -43,13 +44,24 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return _dataCtrl.transportArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    OfferTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"offerCellIdentifier"];
+    TransportOption *transportOption = [_dataCtrl.transportArray objectAtIndex:indexPath.row];
+    NSArray *routeArray = transportOption.routes;
     
-    return cell;
+    //If route is a direct package
+    if (routeArray.count == 1 )
+    {
+        OfferTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"offerCellIdentifier"];
+        
+        [cell setTableViewCellUsingTransportOption:transportOption toCity:_dataCtrl.toCity andFromCity:_dataCtrl.fromCity];
+        
+        return cell;
+    }
+    
+    return nil;
 }
 
 #pragma mark - Button Action

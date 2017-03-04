@@ -64,7 +64,7 @@
     //disableSearchButton
     [_searchButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [_searchButton setBackgroundColor:[UIColor whiteColor]];
-    _searchButton.layer.borderColor = [UIColor clearColor].CGColor;
+    _searchButton.layer.borderColor = [UIColor grayColor].CGColor;
     [_searchButton setEnabled:NO];
 }
 
@@ -260,6 +260,7 @@
     TransportRoutesViewController *transportRoutesViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"TransportRoutesViewController"];
     
     transportRoutesViewController.delegate = self;
+    transportRoutesViewController.dataCtrl = _dataCtrl;
     
     [self.navigationController pushViewController:transportRoutesViewController animated:YES];
 }
