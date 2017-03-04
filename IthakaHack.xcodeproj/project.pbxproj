@@ -25,6 +25,8 @@
 		298A12FF1E699E24005CA8CA /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 298A12FE1E699E24005CA8CA /* plus.png */; };
 		298A13031E699FF4005CA8CA /* OfferCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A13021E699FF4005CA8CA /* OfferCollectionViewCell.m */; };
 		298A13091E69A2C6005CA8CA /* AddButtonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298A13081E69A2C6005CA8CA /* AddButtonCollectionViewCell.m */; };
+		2991B82E1E6A9F1100CB2A7B /* TransportOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 2991B82D1E6A9F1100CB2A7B /* TransportOption.m */; };
+		2991B8311E6A9F9400CB2A7B /* WrapperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2991B8301E6A9F9400CB2A7B /* WrapperManager.m */; };
 		433F2BB41B461366DD62489C /* libPods-IthakaHack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 994F056D221E9CE34B5645B1 /* libPods-IthakaHack.a */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,10 @@
 		298A13021E699FF4005CA8CA /* OfferCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferCollectionViewCell.m; sourceTree = "<group>"; };
 		298A13071E69A2C6005CA8CA /* AddButtonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddButtonCollectionViewCell.h; sourceTree = "<group>"; };
 		298A13081E69A2C6005CA8CA /* AddButtonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddButtonCollectionViewCell.m; sourceTree = "<group>"; };
+		2991B82C1E6A9F1100CB2A7B /* TransportOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportOption.h; sourceTree = "<group>"; };
+		2991B82D1E6A9F1100CB2A7B /* TransportOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportOption.m; sourceTree = "<group>"; };
+		2991B82F1E6A9F9400CB2A7B /* WrapperManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapperManager.h; sourceTree = "<group>"; };
+		2991B8301E6A9F9400CB2A7B /* WrapperManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapperManager.m; sourceTree = "<group>"; };
 		3EB3210087A902244680A2B4 /* Pods-IthakaHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IthakaHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IthakaHack/Pods-IthakaHack.debug.xcconfig"; sourceTree = "<group>"; };
 		91BDECC7C345BEA2812FCECA /* Pods-IthakaHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IthakaHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-IthakaHack/Pods-IthakaHack.release.xcconfig"; sourceTree = "<group>"; };
 		994F056D221E9CE34B5645B1 /* libPods-IthakaHack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IthakaHack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,8 +171,8 @@
 			children = (
 				298A12BB1E6957AE005CA8CA /* AppDelegate.h */,
 				298A12BC1E6957AE005CA8CA /* AppDelegate.m */,
-				292C25B21E69AD4E0005E9D3 /* TransportWrapper.h */,
-				292C25B31E69AD4E0005E9D3 /* TransportWrapper.m */,
+				2991B82B1E6A9E6F00CB2A7B /* Models */,
+				2991B82A1E6A9E5700CB2A7B /* Wrapper */,
 				292C25B51E69AD610005E9D3 /* Table Display */,
 				298A12EE1E6963D2005CA8CA /* Map Display View */,
 				298A12EB1E696373005CA8CA /* Images */,
@@ -261,6 +267,26 @@
 				298A13081E69A2C6005CA8CA /* AddButtonCollectionViewCell.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		2991B82A1E6A9E5700CB2A7B /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				292C25B21E69AD4E0005E9D3 /* TransportWrapper.h */,
+				292C25B31E69AD4E0005E9D3 /* TransportWrapper.m */,
+				2991B82F1E6A9F9400CB2A7B /* WrapperManager.h */,
+				2991B8301E6A9F9400CB2A7B /* WrapperManager.m */,
+			);
+			name = Wrapper;
+			sourceTree = "<group>";
+		};
+		2991B82B1E6A9E6F00CB2A7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2991B82C1E6A9F1100CB2A7B /* TransportOption.h */,
+				2991B82D1E6A9F1100CB2A7B /* TransportOption.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,7 +481,9 @@
 				292C25B81E69AD800005E9D3 /* TransportRoutesViewController.m in Sources */,
 				298A12F61E69646A005CA8CA /* MapViewDataController.m in Sources */,
 				292C25B41E69AD4E0005E9D3 /* TransportWrapper.m in Sources */,
+				2991B8311E6A9F9400CB2A7B /* WrapperManager.m in Sources */,
 				298A12BD1E6957AE005CA8CA /* AppDelegate.m in Sources */,
+				2991B82E1E6A9F1100CB2A7B /* TransportOption.m in Sources */,
 				298A12BA1E6957AE005CA8CA /* main.m in Sources */,
 				298A13091E69A2C6005CA8CA /* AddButtonCollectionViewCell.m in Sources */,
 				298A13031E699FF4005CA8CA /* OfferCollectionViewCell.m in Sources */,

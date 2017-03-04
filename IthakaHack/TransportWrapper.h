@@ -10,4 +10,6 @@
 
 @interface TransportWrapper : NSObject
 
+-(void)getTransportOptionDataWithFromCity:(NSString *)fromCity andToCity:(NSString *)toCity OnSuccess:(void(^)(NSMutableArray *transportArray))onSuccess onFailure:(void (^)(void))onFailure;
+
 @end
