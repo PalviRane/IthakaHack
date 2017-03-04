@@ -10,6 +10,8 @@
 #import "MapViewDataController.h"
 #import "OfferCollectionViewCell.h"
 #import "AddButtonCollectionViewCell.h"
+#import "TransportOption.h"
+#import "Route.h"
 
 
 #define RedColor [UIColor colorWithRed:223/255.0 green:123/255.0 blue:119/255.0 alpha:1.0]
@@ -198,6 +200,13 @@
     {
         OfferCollectionViewCell *offerCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"offersCellIdentifier" forIndexPath:indexPath];
         
+        if (_dataCtrl.transportArray.count > 0)
+        {
+            TransportOption *transportOption = [_dataCtrl.transportArray objectAtIndex:indexPath.row];
+            
+            [offerCell setCellDataUsingFromCityName:_dataCtrl.fromCity toCityName:_dataCtrl.toCity offerTitle:transportOption.type totalAmount:transportOption.totalCost andTotalTime:transportOption.totalDuration ];
+        }
+       
         return offerCell;
     }
     else

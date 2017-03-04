@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *durationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *amountLabel;
 
--(void)setCellDataUsingFromCityName:(NSString *)fromCity toCityName:(NSString *)toCity offerTitle:(NSString *)offerTitle totalAmount:(NSString *)amount andTotalTime:(NSString *)time;
+-(void)setCellDataUsingFromCityName:(NSString *)fromCity toCityName:(NSString *)toCity offerTitle:(NSString *)offerTitle totalAmount:(NSNumber *)amount andTotalTime:(NSNumber *)time;
 
 @end

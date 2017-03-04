@@ -64,12 +64,12 @@
         
         if ([transportDict valueForKey:@"totalDuration"])
         {
-            transportOption.totalCost = [transportDict valueForKey:@"totalDuration"];
+            transportOption.totalDuration = [transportDict valueForKey:@"totalDuration"];
         }
         
         if ([transportDict valueForKey:@"type"])
         {
-            transportOption.totalCost = [transportDict valueForKey:@"type"];
+            transportOption.type = [transportDict valueForKey:@"type"];
         }
         
         //Reaction Route Objects
@@ -92,27 +92,27 @@
                 
                 if ([routesDictionary valueForKey:@"duration"]) {
                     
-                    route.cost = [routesDictionary valueForKey:@"duration"];
+                    route.duration = [routesDictionary valueForKey:@"duration"];
                 }
                 
                 if ([routesDictionary valueForKey:@"from"]) {
                     
-                    route.cost = [routesDictionary valueForKey:@"from"];
+                    route.from = [routesDictionary valueForKey:@"from"];
                 }
                 
                 if ([routesDictionary valueForKey:@"mode"]) {
                     
-                    route.cost = [routesDictionary valueForKey:@"mode"];
+                    route.mode = [routesDictionary valueForKey:@"mode"];
                 }
                 
                 if ([routesDictionary valueForKey:@"time"]) {
                     
-                    route.cost = [routesDictionary valueForKey:@"time"];
+                    route.time = [routesDictionary valueForKey:@"time"];
                 }
                 
                 if ([routesDictionary valueForKey:@"to"]) {
                     
-                    route.cost = [routesDictionary valueForKey:@"to"];
+                    route.to = [routesDictionary valueForKey:@"to"];
                 }
                 
                 [routeArray addObject:route];
