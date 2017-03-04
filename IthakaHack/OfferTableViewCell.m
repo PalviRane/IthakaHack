@@ -28,10 +28,19 @@
     _transportationTypeLabel.text = transportOption.type;
     _toCityLabel.text = toCity;
     _fromCityLabel.text = fromCity;
-    _startTimeLabel.text = route.time;
     _amountLabel.text = [NSString stringWithFormat:@"%ld TBH",transportOption.totalCost.longValue];
     _durationLabel.text = [NSString stringWithFormat:@"%ld hours",transportOption.totalDuration.longValue];
+    
+    //Converting Time Sting to AM/PM Format
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"HH:mm"];
+    NSDate *date = [formatter dateFromString:route.time];
+    NSLog(@"Current Date: %@", date);
+    
+    formatter.dateFormat = @"hh:mm a";
+    NSString *pmamDateString = [formatter stringFromDate:date];
 
+    _startTimeLabel.text = pmamDateString;
 }
 
 @end
