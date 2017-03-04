@@ -152,12 +152,15 @@
     {
         _searchViewBottomConstraint.constant = 0;
         _fromCityLabel.text = @"Bangkok";
+        _dataCtrl.fromCity = @"Bangkok";
+        
         _toCityLabel.text = @"Select Destination";
         _toCityLabel.textColor = [UIColor grayColor];
     }
     else if(tapCount == 2)
     {
         _toCityLabel.text = @"Koh Samui";
+        _dataCtrl.toCity = @"Koh Samui";
         _toCityLabel.textColor = [UIColor blackColor];
         
         //enable SearchButton
@@ -204,13 +207,34 @@
 
 - (IBAction)searchButtonAction:(id)sender
 {
-    _searchViewBottomConstraint.constant = -150;
-    [self.view layoutIfNeeded];
-    
-    _collectionViewBottonConstraint.constant = 0;
-    [UIView animateWithDuration:0.4 animations:^{
-        [self.view layoutIfNeeded];
+    [_dataCtrl getTransportOptionDataOnSuccess:^{
+        
+        _searchViewBottomConstraint.constant = -150;
+        _collectionViewBottonConstraint.constant = 0;
+        [UIView animateWithDuration:0.4 animations:^{
+            [self.view layoutIfNeeded];
+        }];
+        [_offersCollectionView reloadData];
+        
+    } onFailure:^{
+        
+        UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"Error" message:@"Something went wrong" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {
+                                                                  
+                                                                  tapCount = 0;
+                                                                  
+                                                              }];
+        [alert addAction:defaultAction];
+        
+        
+        [self presentViewController:alert animated:YES completion:nil];
+
+        
     }];
+    
+    
     
 }
 

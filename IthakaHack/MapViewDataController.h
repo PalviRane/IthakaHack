@@ -15,4 +15,6 @@
 
 @property (strong, nonatomic) NSMutableArray *transportArray;
 
+-(void)getTransportOptionDataOnSuccess:(void(^)(void))onSuccess onFailure:(void (^)(void))onFailure;
+
 @end

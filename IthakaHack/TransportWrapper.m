@@ -8,36 +8,30 @@
 
 #import "TransportWrapper.h"
 #import <AFNetworking.h>
+#import "TransportOption.h"
+#import "Route.h"
 
 @implementation TransportWrapper
 
 -(void)getTransportOptionDataWithFromCity:(NSString *)fromCity andToCity:(NSString *)toCity OnSuccess:(void(^)(NSMutableArray *transportArray))onSuccess onFailure:(void (^)(void))onFailure
 {
-    NSString *urlStr = @"";
+    NSString *urlStr = @"http://dev.ithaka.travel/transport/from/Bangkok/to/Phuket";
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     
-    [manager.requestSerializer setTimeoutInterval:30];
-    
-     NSDictionary *postDict = @{ @"fromCity": fromCity, @"toCity": toCity };
+    NSDictionary *postDict = @{ @"fromCity": fromCity, @"toCity": toCity };
     
     [manager GET:urlStr parameters:postDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
         NSHTTPURLResponse *response = (NSHTTPURLResponse*)task.response;
         if (response.statusCode == 201 || response.statusCode == 200)
         {
-            NSNumber *status = [responseObject valueForKey:@"status"];
-            
-            if(status.boolValue == YES)
-            {
+            NSArray *transportArray = responseObject;
                 
-            }
-            else
-            {
-                onFailure();
-            }
+            onSuccess ([self getTransportOptionsArrayWithArray:transportArray]);
+           
         }
         else
         {
@@ -57,7 +51,78 @@
     
     for (int i = 0; i < transportArray.count; i++)
     {
+        NSDictionary *transportDict = [transportArray objectAtIndex:i];
         
+        TransportOption *transportOption = [[TransportOption alloc] init];
+        
+        //Creating an Array of Objects
+        
+        if ([transportDict valueForKey:@"totalCost"])
+        {
+            transportOption.totalCost = [transportDict valueForKey:@"totalCost"];
+        }
+        
+        if ([transportDict valueForKey:@"totalDuration"])
+        {
+            transportOption.totalCost = [transportDict valueForKey:@"totalDuration"];
+        }
+        
+        if ([transportDict valueForKey:@"type"])
+        {
+            transportOption.totalCost = [transportDict valueForKey:@"type"];
+        }
+        
+        //Reaction Route Objects
+        NSMutableArray *routeArray = [[NSMutableArray alloc]init];
+        
+        if ([transportDict valueForKey:@"routes"])
+        {
+            NSArray *routesArray = [transportDict valueForKey:@"routes"];
+            
+            for (int i = 0; i < routesArray.count ; i++)
+            {
+                NSDictionary *routesDictionary = [routesArray objectAtIndex:i];
+                
+                Route *route = [[Route alloc] init];
+                
+                if ([routesDictionary valueForKey:@"cost"]) {
+                    
+                    route.cost = [routesDictionary valueForKey:@"cost"];
+                }
+                
+                if ([routesDictionary valueForKey:@"duration"]) {
+                    
+                    route.cost = [routesDictionary valueForKey:@"duration"];
+                }
+                
+                if ([routesDictionary valueForKey:@"from"]) {
+                    
+                    route.cost = [routesDictionary valueForKey:@"from"];
+                }
+                
+                if ([routesDictionary valueForKey:@"mode"]) {
+                    
+                    route.cost = [routesDictionary valueForKey:@"mode"];
+                }
+                
+                if ([routesDictionary valueForKey:@"time"]) {
+                    
+                    route.cost = [routesDictionary valueForKey:@"time"];
+                }
+                
+                if ([routesDictionary valueForKey:@"to"]) {
+                    
+                    route.cost = [routesDictionary valueForKey:@"to"];
+                }
+                
+                [routeArray addObject:route];
+            }
+            
+            //Adding routes array to transport option object
+            transportOption.routesArray = routeArray;
+        }
+    
+        [transportOptionsArray addObject: transportOption];
     }
     
     return transportOptionsArray;

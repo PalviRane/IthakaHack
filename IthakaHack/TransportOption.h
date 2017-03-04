@@ -10,7 +10,9 @@
 
 @interface TransportOption : NSObject
 
-@property(nonatomic,retain) NSNumber *cost;
-@property(nonatomic,retain) NSNumber *time;
+@property(nonatomic,retain) NSNumber *totalCost;
+@property(nonatomic,retain) NSNumber *totalDuration;
+@property(nonatomic,retain) NSString *type;
+@property(nonatomic,retain) NSArray *routesArray;
 
 @end
