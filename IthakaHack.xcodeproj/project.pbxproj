@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B46462BCCB4AAE17BE8F984 /* Pods_IthakaHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A72A62999C9B997D41E23D7 /* Pods_IthakaHack.framework */; };
 		292C25B11E69AC000005E9D3 /* OfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 292C25B01E69AC000005E9D3 /* OfferTableViewCell.m */; };
 		292C25B41E69AD4E0005E9D3 /* TransportWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 292C25B31E69AD4E0005E9D3 /* TransportWrapper.m */; };
 		292C25B81E69AD800005E9D3 /* TransportRoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292C25B71E69AD800005E9D3 /* TransportRoutesViewController.m */; };
@@ -28,7 +29,7 @@
 		2991B82E1E6A9F1100CB2A7B /* TransportOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 2991B82D1E6A9F1100CB2A7B /* TransportOption.m */; };
 		2991B8311E6A9F9400CB2A7B /* WrapperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2991B8301E6A9F9400CB2A7B /* WrapperManager.m */; };
 		2991B8341E6AC35200CB2A7B /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 2991B8331E6AC35200CB2A7B /* Route.m */; };
-		433F2BB41B461366DD62489C /* libPods-IthakaHack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 994F056D221E9CE34B5645B1 /* libPods-IthakaHack.a */; };
+		29EC546F1E846C6A00895133 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EC546E1E846C6A00895133 /* ProgressViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A72A62999C9B997D41E23D7 /* Pods_IthakaHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IthakaHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292C25AF1E69AC000005E9D3 /* OfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferTableViewCell.h; sourceTree = "<group>"; };
 		292C25B01E69AC000005E9D3 /* OfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferTableViewCell.m; sourceTree = "<group>"; };
 		292C25B21E69AD4E0005E9D3 /* TransportWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportWrapper.h; sourceTree = "<group>"; };
@@ -87,9 +89,10 @@
 		2991B8301E6A9F9400CB2A7B /* WrapperManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapperManager.m; sourceTree = "<group>"; };
 		2991B8321E6AC35200CB2A7B /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
 		2991B8331E6AC35200CB2A7B /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		29EC546D1E846C6A00895133 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		29EC546E1E846C6A00895133 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 		3EB3210087A902244680A2B4 /* Pods-IthakaHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IthakaHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IthakaHack/Pods-IthakaHack.debug.xcconfig"; sourceTree = "<group>"; };
 		91BDECC7C345BEA2812FCECA /* Pods-IthakaHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IthakaHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-IthakaHack/Pods-IthakaHack.release.xcconfig"; sourceTree = "<group>"; };
-		994F056D221E9CE34B5645B1 /* libPods-IthakaHack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IthakaHack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				298A12F91E696BF9005CA8CA /* MapKit.framework in Frameworks */,
-				433F2BB41B461366DD62489C /* libPods-IthakaHack.a in Frameworks */,
+				0B46462BCCB4AAE17BE8F984 /* Pods_IthakaHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +176,8 @@
 			children = (
 				298A12BB1E6957AE005CA8CA /* AppDelegate.h */,
 				298A12BC1E6957AE005CA8CA /* AppDelegate.m */,
+				29EC546D1E846C6A00895133 /* ProgressViewController.h */,
+				29EC546E1E846C6A00895133 /* ProgressViewController.m */,
 				2991B82B1E6A9E6F00CB2A7B /* Models */,
 				2991B82A1E6A9E5700CB2A7B /* Wrapper */,
 				292C25B51E69AD610005E9D3 /* Table Display */,
@@ -255,7 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				298A12F81E696BF9005CA8CA /* MapKit.framework */,
-				994F056D221E9CE34B5645B1 /* libPods-IthakaHack.a */,
+				1A72A62999C9B997D41E23D7 /* Pods_IthakaHack.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EC546F1E846C6A00895133 /* ProgressViewController.m in Sources */,
 				292C25B11E69AC000005E9D3 /* OfferTableViewCell.m in Sources */,
 				298A12F21E696422005CA8CA /* MapViewViewController.m in Sources */,
 				292C25B81E69AD800005E9D3 /* TransportRoutesViewController.m in Sources */,
